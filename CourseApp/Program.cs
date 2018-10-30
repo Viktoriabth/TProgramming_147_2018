@@ -2,7 +2,7 @@
 
 namespace ConsoleApp3
 {
-    class Program
+    public class Program
     {
 
 
