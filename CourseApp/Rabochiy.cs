@@ -7,11 +7,11 @@ namespace CourseApp
     public class Rabochiy
     {
         private string name;
-        private DateTime employee;
+        private string hireDate;
 
-        public Rabochiy(DateTime employee, string name)
+        public Rabochiy(string hireDate, string name)
         {
-            this.employee = employee;
+            this.hireDate = hireDate;
             this.name = name;
         }
 
@@ -21,15 +21,15 @@ namespace CourseApp
             set => name = value;
         }
 
-        public DateTime Employee
+        public string HireDate
         {
-            get => employee;
-            set => employee = value;
+            get => hireDate;
+            set => hireDate = value;
         }
 
         public string GetInfo()
         {
-            return $"Имя: {name}  Дата приема: {employee} ";
+            return $"Имя: {name}  Дата приема: {hireDate} ";
         }
     }
 }
